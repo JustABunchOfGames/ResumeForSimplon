@@ -138,13 +138,18 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 1rem;
 
         li {
             font-size: 1.5rem;
-            margin: 2rem 1rem 0 0;
+            height: 1.5rem; /* height for svg scaling */
+
+            margin-top: 2rem;
 
             a {
-                padding: 1vh 2vw;
+                display: ruby;
+
+                padding: 0.8rem 1rem;
                 border-radius: 15px;
 
                 text-decoration: none;
@@ -152,6 +157,12 @@ footer {
                 color: black;
 
                 box-shadow: 2px 2px 5px white;
+
+                svg {
+                    height: 100%;
+
+                    vertical-align: bottom;
+                }
             }
     
             a:hover {
@@ -173,8 +184,4 @@ footer {
             width: 180px;
         }
     }
-}
-
-@media (min-width:990px){
-
 }
